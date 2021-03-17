@@ -17,8 +17,6 @@ import ru.developer.android.widgets.WidgetsMain;
 public class Tab1Fragment extends Fragment {
 
 
-
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -29,8 +27,6 @@ public class Tab1Fragment extends Fragment {
 
         return view;
     }
-
-
 
     private void onClickImage(View view) {
         ZoomInImageView widgets = view.findViewById(R.id.widgets);
