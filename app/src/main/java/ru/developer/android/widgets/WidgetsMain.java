@@ -1,52 +1,108 @@
 package ru.developer.android.widgets;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
+import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import ru.developer.android.AdapterTutorial;
 import ru.developer.android.R;
 import ru.developer.android.Tutorial;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class WidgetsMain extends AppCompatActivity {
+public class WidgetsMain extends AppCompatActivity{
 
-    ArrayList<Tutorial> tutorials = new ArrayList<>();
+    ListView listViewWidgets;
+    ArrayAdapter<String> adapter;
+    ArrayList<String> widgetsList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.widgets_main);
+        ActionBar actionBar = this.getSupportActionBar();
+        if (actionBar != null){
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+        actionBar.setTitle("Widgets");
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerTutorial);
+
+        listViewWidgets = findViewById(R.id.listViewWidgets);
+
         setInitialData();
 
-        AdapterTutorial adapter = new AdapterTutorial(this, tutorials);
-        recyclerView.setAdapter(adapter);
+        adapter = new ArrayAdapter<>(this,R.layout.support_simple_spinner_dropdown_item,widgetsList);
+        listViewWidgets.setAdapter(adapter);
+
+
+        listViewWidgets.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        Toast.makeText(WidgetsMain.this, "Позиция "+ position, Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        Toast.makeText(WidgetsMain.this, "Позиция "+ position, Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(WidgetsMain.this, "Позиция "+ position, Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        });
+
+
+
+
+
     }
     private void setInitialData() {
 
-        tutorials.add(new Tutorial("TextView", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("EditText", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("Button", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("ToggleButton", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("RadioButton", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("ImageView", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("ImageButton", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("Switch", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("Checkbox", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("CustomCheckbox", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("Spinner", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("SeekBar", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("RatingBar", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("AutoCompleteTextView", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("MultiCompleteTextView", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("ImageSwitcher", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("TextSwitcher", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("ScrollView", R.drawable.ic_android_24));
-        tutorials.add(new Tutorial("AlertDialog", R.drawable.ic_android_24));
+        widgetsList = new ArrayList<>();
+        widgetsList.add("TextView");
+        widgetsList.add("EditText");
+        widgetsList.add("Button");
+        widgetsList.add("ToggleButton");
+        widgetsList.add("RadioButton");
+        widgetsList.add("ImageView");
+        widgetsList.add("ImageButton");
+        widgetsList.add("Switch");
+        widgetsList.add("Checkbox");
+        widgetsList.add("CustomCheckbox");
+        widgetsList.add("Spinner");
+        widgetsList.add("SeekBar");
+        widgetsList.add("RatingBar");
+        widgetsList.add("AutoCompleteTextView");
+        widgetsList.add("MultiCompleteTextView");
+        widgetsList.add("ImageSwitcher");
+        widgetsList.add("TextSwitcher");
+        widgetsList.add("ScrollView");
+        widgetsList.add("AlertDialog");
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            NavUtils.navigateUpFromSameTask(this);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
