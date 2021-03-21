@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!--    TextView c тенью и возможностью копировать-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:text="Привет мир!"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:shadowColor="@color/purple_200"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"/>
+
+    <!--    TextView c ссылкой-->
+    <TextView
+        android:id="@+id/textViewLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Сайт: www.google.ru"
+        android:autoLink="web"
+        android:layout_margin="15dp"
+        android:linksClickable="true"
+        android:textSize="30sp"
+        android:textColor="@color/purple_700"
+        android:textStyle="italic"/>
+
+</LinearLayout>

@@ -14,19 +14,21 @@ import androidx.fragment.app.Fragment;
 import ru.developer.android.widgets.WidgetsMain;
 
 
-public class Tab1Fragment extends Fragment {
+public class TutorialFragment extends Fragment {
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment1_layout, container, false);
+        View view = inflater.inflate(R.layout.fragment_tutorial, container, false);
 
         ZoomImage(view);
         onClickImage(view);
 
         return view;
     }
+
+
 
     private void onClickImage(View view) {
         ZoomInImageView widgets = view.findViewById(R.id.widgets);

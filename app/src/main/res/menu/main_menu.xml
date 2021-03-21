@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:title="share"
+        android:icon="@drawable/ic_share_24"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/star"
+        android:title="star"
+        android:icon="@drawable/ic_star_24"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="settings"
+        android:icon="@drawable/ic_settings_24"
+        app:showAsAction="always" />
+
+</menu>

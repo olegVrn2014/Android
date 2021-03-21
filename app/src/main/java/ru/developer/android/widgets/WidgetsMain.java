@@ -4,25 +4,18 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NavUtils;
-import androidx.core.view.MenuItemCompat;
-import androidx.recyclerview.widget.RecyclerView;
-import ru.developer.android.AdapterTutorial;
 import ru.developer.android.R;
-import ru.developer.android.Tutorial;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class WidgetsMain extends AppCompatActivity{
 
@@ -54,7 +47,7 @@ public class WidgetsMain extends AppCompatActivity{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        Toast.makeText(WidgetsMain.this, "Позиция "+ position, Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(WidgetsMain.this, TextViewActivity.class); startActivity(intent);
                         break;
                     case 1:
                         Toast.makeText(WidgetsMain.this, "Позиция "+ position, Toast.LENGTH_SHORT).show();
