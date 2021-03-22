@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 
@@ -50,10 +51,13 @@ public class WidgetsMain extends AppCompatActivity{
                         Intent intent = new Intent(WidgetsMain.this, TextViewActivity.class); startActivity(intent);
                         break;
                     case 1:
-                        Toast.makeText(WidgetsMain.this, "Позиция "+ position, Toast.LENGTH_SHORT).show();
+                        Intent intent1 = new Intent(WidgetsMain.this, EditTextActivity.class); startActivity(intent1);
                         break;
                     case 2:
-                        Toast.makeText(WidgetsMain.this, "Позиция "+ position, Toast.LENGTH_SHORT).show();
+                        Intent intent2 = new Intent(WidgetsMain.this, ButtonActivity.class); startActivity(intent2);
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(WidgetsMain.this, ToggleActivity.class); startActivity(intent3);
                         break;
                 }
             }

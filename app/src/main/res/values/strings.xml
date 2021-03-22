@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Android App</string>
     <string name="activity_main_xml">activity_main.xml</string>
-    <string name="mainactivity_java">MainActivity.java</string>
+    <string name="mainActivity_java">MainActivity.java</string>
     <string name="tutorial_android">Руков-во ANDROID</string>
     <string name="Questions">Вопросы-Ответы</string>
     <string name="share">Поделиться</string>
