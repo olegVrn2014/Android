@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".runWidgets.RunToggle"></activity>
+        <activity android:name=".runWidgets.RunRadioBtn"></activity>
+        <activity android:name=".widgets.RadioBtnActivity" />
+        <activity android:name=".runWidgets.RunToggle" />
         <activity android:name=".widgets.ToggleActivity" />
         <activity android:name=".runWidgets.RunButton" />
         <activity android:name=".widgets.ButtonActivity" />

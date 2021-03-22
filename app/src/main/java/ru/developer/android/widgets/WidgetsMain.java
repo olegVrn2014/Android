@@ -59,6 +59,9 @@ public class WidgetsMain extends AppCompatActivity{
                     case 3:
                         Intent intent3 = new Intent(WidgetsMain.this, ToggleActivity.class); startActivity(intent3);
                         break;
+                    case 4:
+                        Intent intent4 = new Intent(WidgetsMain.this, RadioBtnActivity.class); startActivity(intent4);
+                        break;
                 }
             }
         });
