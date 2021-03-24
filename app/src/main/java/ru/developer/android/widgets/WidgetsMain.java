@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -61,6 +62,12 @@ public class WidgetsMain extends AppCompatActivity{
                         break;
                     case 4:
                         Intent intent4 = new Intent(WidgetsMain.this, RadioBtnActivity.class); startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(WidgetsMain.this, ImageViewActivity.class); startActivity(intent5);
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(WidgetsMain.this, ImageButtonActivity.class); startActivity(intent6);
                         break;
                 }
             }
