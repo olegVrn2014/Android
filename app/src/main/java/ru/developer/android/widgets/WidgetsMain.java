@@ -69,6 +69,15 @@ public class WidgetsMain extends AppCompatActivity{
                     case 6:
                         Intent intent6 = new Intent(WidgetsMain.this, ImageButtonActivity.class); startActivity(intent6);
                         break;
+                    case 7:
+                        Intent intent7 = new Intent(WidgetsMain.this, SwitchActivity.class); startActivity(intent7);
+                        break;
+                    case 8:
+                        Intent intent8 = new Intent(WidgetsMain.this, CheckBoxActivity.class); startActivity(intent8);
+                        break;
+                    case 9:
+                        Intent intent9 = new Intent(WidgetsMain.this, CustomCheckBoxActivity.class); startActivity(intent9);
+                        break;
                 }
             }
         });

@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".runWidgets.RunImageButton"></activity>
+        <activity android:name=".runWidgets.RunCustomCheckBox"></activity>
+        <activity android:name=".widgets.CustomCheckBoxActivity" />
+        <activity android:name=".runWidgets.RunCheckBox" />
+        <activity android:name=".widgets.CheckBoxActivity" />
+        <activity android:name=".runWidgets.RunSwitch" />
+        <activity android:name=".widgets.SwitchActivity" />
+        <activity android:name=".runWidgets.RunImageButton" />
         <activity android:name=".widgets.ImageButtonActivity" />
         <activity android:name=".runWidgets.RunImageView" />
         <activity android:name=".widgets.ImageViewActivity" />
