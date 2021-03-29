@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".runWidgets.RunCustomCheckBox"></activity>
+        <activity android:name=".runWidgets.RunSeekBar"></activity>
+        <activity android:name=".widgets.SeekBarActivity" />
+        <activity android:name=".runWidgets.RunSpinner" />
+        <activity android:name=".widgets.SpinnerActivity" />
+        <activity android:name=".runWidgets.RunCustomCheckBox" />
         <activity android:name=".widgets.CustomCheckBoxActivity" />
         <activity android:name=".runWidgets.RunCheckBox" />
         <activity android:name=".widgets.CheckBoxActivity" />

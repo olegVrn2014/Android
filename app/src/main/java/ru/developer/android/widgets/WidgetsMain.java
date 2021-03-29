@@ -78,6 +78,12 @@ public class WidgetsMain extends AppCompatActivity{
                     case 9:
                         Intent intent9 = new Intent(WidgetsMain.this, CustomCheckBoxActivity.class); startActivity(intent9);
                         break;
+                    case 10:
+                        Intent intent10 = new Intent(WidgetsMain.this, SpinnerActivity.class); startActivity(intent10);
+                        break;
+                    case 11:
+                        Intent intent11 = new Intent(WidgetsMain.this, SeekBarActivity.class); startActivity(intent11);
+                        break;
                 }
             }
         });
