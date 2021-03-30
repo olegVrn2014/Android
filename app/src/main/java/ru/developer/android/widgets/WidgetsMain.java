@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.RatingBar;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -83,6 +84,9 @@ public class WidgetsMain extends AppCompatActivity{
                         break;
                     case 11:
                         Intent intent11 = new Intent(WidgetsMain.this, SeekBarActivity.class); startActivity(intent11);
+                        break;
+                    case 12:
+                        Intent intent12 = new Intent(WidgetsMain.this, RatingBarActivity.class); startActivity(intent12);
                         break;
                 }
             }
