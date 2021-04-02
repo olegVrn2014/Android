@@ -14,6 +14,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.MultiAutoCompleteTextView;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -88,6 +90,15 @@ public class WidgetsMain extends AppCompatActivity{
                     case 12:
                         Intent intent12 = new Intent(WidgetsMain.this, RatingBarActivity.class); startActivity(intent12);
                         break;
+                    case 13:
+                        Intent intent13= new Intent(WidgetsMain.this, ProgressBarActivity.class); startActivity(intent13);
+                        break;
+                    case 14:
+                        Intent intent14= new Intent(WidgetsMain.this, AutoCompleteTextViewActivity.class); startActivity(intent14);
+                        break;
+                    case 15:
+                        Intent intent15= new Intent(WidgetsMain.this, MultiCompleteTextViewActivity.class); startActivity(intent15);
+                        break;
                 }
             }
         });
@@ -113,12 +124,15 @@ public class WidgetsMain extends AppCompatActivity{
         widgetsList.add("Spinner");
         widgetsList.add("SeekBar");
         widgetsList.add("RatingBar");
+        widgetsList.add("ProgressBar");
         widgetsList.add("AutoCompleteTextView");
         widgetsList.add("MultiCompleteTextView");
         widgetsList.add("ImageSwitcher");
         widgetsList.add("TextSwitcher");
+        widgetsList.add("CheckedTextView");
         widgetsList.add("ScrollView");
         widgetsList.add("AlertDialog");
+        widgetsList.add("AdapterViewFlipper");
 
 
     }

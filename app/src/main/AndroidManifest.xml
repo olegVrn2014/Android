@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".runWidgets.RunRatingBar"></activity>
+        <activity android:name=".runWidgets.RunMultiCompleteTextView"></activity>
+        <activity android:name=".widgets.MultiCompleteTextViewActivity" />
+        <activity android:name=".runWidgets.RunAutoCompleteTextView" />
+        <activity android:name=".widgets.AutoCompleteTextViewActivity" />
+        <activity android:name=".runWidgets.RunProgressBar" />
+        <activity android:name=".widgets.ProgressBarActivity" />
+        <activity android:name=".runWidgets.RunRatingBar" />
         <activity android:name=".widgets.RatingBarActivity" />
         <activity android:name=".runWidgets.RunSeekBar" />
         <activity android:name=".widgets.SeekBarActivity" />

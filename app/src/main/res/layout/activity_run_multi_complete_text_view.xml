@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".runWidgets.RunMultiCompleteTextView">
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multi_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:inputType="text"
+        android:completionThreshold="1"
+        android:hint="Введите название фрукта" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_margin="10sp"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:text="Введите фрукты из списка:\nБананы, Яблоки, Абрикосы, Ежевика, Черника, Вишня, Манго, Папайя"/>
+
+</LinearLayout>
