@@ -99,6 +99,24 @@ public class WidgetsMain extends AppCompatActivity{
                     case 15:
                         Intent intent15= new Intent(WidgetsMain.this, MultiCompleteTextViewActivity.class); startActivity(intent15);
                         break;
+                    case 16:
+                        Intent intent16= new Intent(WidgetsMain.this, ImageSwitcherActivity.class); startActivity(intent16);
+                        break;
+                    case 17:
+                        Intent intent17= new Intent(WidgetsMain.this, TextSwitcherActivity.class); startActivity(intent17);
+                        break;
+                    case 18:
+                        Intent intent18= new Intent(WidgetsMain.this, ScrollViewVerActivity.class); startActivity(intent18);
+                        break;
+                    case 19:
+                        Intent intent19= new Intent(WidgetsMain.this, ScrollViewHorActivity.class); startActivity(intent19);
+                        break;
+                    case 20:
+                        Intent intent20= new Intent(WidgetsMain.this, CheckedTextViewActivity.class); startActivity(intent20);
+                        break;
+                    case 21:
+                        Intent intent21= new Intent(WidgetsMain.this, AlertDialogActivity.class); startActivity(intent21);
+                        break;
                 }
             }
         });
@@ -129,8 +147,9 @@ public class WidgetsMain extends AppCompatActivity{
         widgetsList.add("MultiCompleteTextView");
         widgetsList.add("ImageSwitcher");
         widgetsList.add("TextSwitcher");
+        widgetsList.add("ScrollView Vertical");
+        widgetsList.add("ScrollView Horizontal");
         widgetsList.add("CheckedTextView");
-        widgetsList.add("ScrollView");
         widgetsList.add("AlertDialog");
         widgetsList.add("AdapterViewFlipper");
 

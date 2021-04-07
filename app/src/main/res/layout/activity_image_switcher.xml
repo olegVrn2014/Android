@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".widgets.CustomCheckBoxActivity">
+    tools:context=".widgets.ImageSwitcherActivity">
 
 
     <ScrollView
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/coda"
-                android:text="В папку drawable добаляем 2 новые векторные картинки"
+                android:text="Добавляем любые изображения в папку drawable"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
@@ -73,37 +73,8 @@
                 android:id="@+id/imageSwitcherDrawable"
                 android:layout_margin="3dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/coda"
-                android:text="1 картинка"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-
-            <com.zolad.zoominimageview.ZoomInImageView
-                android:id="@+id/imageDrawable1"
-                android:layout_margin="3dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/coda"
-                android:text="2 картинка"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-
-            <com.zolad.zoominimageview.ZoomInImageView
-                android:id="@+id/imageDrawable2"
-                android:layout_margin="3dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_marginBottom="20dp"/>
 
         </LinearLayout>
 

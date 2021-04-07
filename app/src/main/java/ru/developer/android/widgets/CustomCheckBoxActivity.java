@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import ru.developer.android.R;
-import ru.developer.android.runWidgets.RunCheckBox;
 import ru.developer.android.runWidgets.RunCustomCheckBox;
 
 import android.content.Intent;
@@ -37,7 +36,7 @@ public class CustomCheckBoxActivity extends AppCompatActivity {
         String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Widgets%2FCustomCheckBox%2FCustomCheckBox-Activity.png?alt=media&token=1920ff9d-198a-46e4-9707-c88ec55b54fc";
         Glide.with(getApplicationContext()).load(url2).into(imageActivity);
 
-        ZoomInImageView imageDrawable = findViewById(R.id.imageDrawable);
+        ZoomInImageView imageDrawable = findViewById(R.id.imageSwitcherDrawable);
         String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Widgets%2FCustomCheckBox%2FCustomCheckBox%20drawable.png?alt=media&token=13cd44c9-c9ff-4e0a-a0e3-68a1fd3f5313";
         Glide.with(getApplicationContext()).load(url3).into(imageDrawable);
 
