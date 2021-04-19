@@ -30,12 +30,52 @@
                     android:weightSum="3">
 
                     <com.zolad.zoominimageview.ZoomInImageView
-                        android:id="@+id/widgets"
+                        android:id="@+id/android"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:background="@drawable/style_zoom_image"
                         android:layout_weight="1"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/layouts"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/widgets"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/resources"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/styles_themes"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"/>
 
                     <com.zolad.zoominimageview.ZoomInImageView
                         android:id="@+id/toast"
@@ -45,8 +85,66 @@
                         android:layout_weight="1"
                         android:background="@drawable/style_zoom_image"/>
 
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/intents"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"/>
+
                     <com.zolad.zoominimageview.ZoomInImageView
                         android:id="@+id/menu"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/containers"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/dateTime"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/materialDesign"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/animation"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"

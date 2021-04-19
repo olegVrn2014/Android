@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".toast.runToast.RunPositionToast">
+
+    <Button
+        android:id="@+id/topToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Toast" />
+
+    <Button
+        android:id="@+id/bottomToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Toast" />
+
+    <Button
+        android:id="@+id/leftToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Toast" />
+
+    <Button
+        android:id="@+id/rightToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right Toast" />
+
+    <Button
+        android:id="@+id/centerToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center Toast" />
+</LinearLayout>
+

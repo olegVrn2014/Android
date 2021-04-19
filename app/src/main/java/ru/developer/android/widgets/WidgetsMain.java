@@ -117,6 +117,9 @@ public class WidgetsMain extends AppCompatActivity{
                     case 21:
                         Intent intent21= new Intent(WidgetsMain.this, AlertDialogActivity.class); startActivity(intent21);
                         break;
+                    case 22:
+                        Intent intent22= new Intent(WidgetsMain.this, AdapterViewFlipperActivity.class); startActivity(intent22);
+                        break;
                 }
             }
         });

@@ -9,7 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".runWidgets.RunAlertDialog"></activity>
+        <activity android:name=".intents.runIntents.RunIntentSecondActivity"></activity>
+        <activity android:name=".intents.runIntents.RunIntentMainActivity" />
+        <activity android:name=".intents.ChangeIntentActivity" />
+        <activity android:name=".intents.runIntents.RunLifecycle" />
+        <activity android:name=".intents.ActivityLifecycle" />
+        <activity
+            android:name=".intents.IntentMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".toast.runToast.RunCustomToast" />
+        <activity android:name=".toast.CustomToastActivity" />
+        <activity android:name=".toast.runToast.RunPositionToast" />
+        <activity android:name=".toast.PositionToastActivity" />
+        <activity android:name=".toast.runToast.RunSimpleToast" />
+        <activity android:name=".toast.SimpleToastActivity" />
+        <activity
+            android:name=".toast.ToastMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".runWidgets.RunAdapterViewFlipper" />
+        <activity android:name=".widgets.AdapterViewFlipperActivity" />
+        <activity android:name=".runWidgets.RunAlertDialog" />
         <activity android:name=".widgets.AlertDialogActivity" />
         <activity android:name=".runWidgets.RunCheckedTextView" />
         <activity android:name=".widgets.CheckedTextViewActivity" />
