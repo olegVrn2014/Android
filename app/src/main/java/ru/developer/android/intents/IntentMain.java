@@ -59,6 +59,9 @@ public class IntentMain extends AppCompatActivity {
                     case 1:
                         Intent intent1 = new Intent(IntentMain.this, ChangeIntentActivity.class); startActivity(intent1);
                         break;
+                    case 2:
+                        Intent intent2 = new Intent(IntentMain.this, PassDataBetweenActivity.class); startActivity(intent2);
+                        break;
 
                 }
             }

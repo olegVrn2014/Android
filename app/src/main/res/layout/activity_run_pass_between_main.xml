@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".intents.runIntents.RunPassBetweenMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Первая Активность"
+        android:textColor="@color/teal_700"
+        android:textSize="25sp"
+        android:layout_margin="15sp"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите Имя"
+        android:layout_margin="5dp"
+        android:textColor="@color/red"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите Фамилию"
+        android:layout_margin="5dp"
+        android:textColor="@color/red"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить"/>
+
+</LinearLayout>
+
