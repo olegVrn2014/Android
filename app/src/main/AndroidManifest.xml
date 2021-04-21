@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".intents.runIntents.RunPassBetweenSecond"></activity>
+        <activity android:name=".intents.runIntents.RunWhatsApp"></activity>
+        <activity android:name=".intents.WhatsAppActivity" />
+        <activity android:name=".intents.runIntents.RunPassBetweenSecond" />
         <activity android:name=".intents.runIntents.RunPassBetweenMain" />
         <activity android:name=".intents.PassDataBetweenActivity" />
         <activity android:name=".intents.runIntents.RunIntentSecondActivity" />

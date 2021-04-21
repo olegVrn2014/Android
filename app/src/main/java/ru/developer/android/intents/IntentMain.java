@@ -62,6 +62,9 @@ public class IntentMain extends AppCompatActivity {
                     case 2:
                         Intent intent2 = new Intent(IntentMain.this, PassDataBetweenActivity.class); startActivity(intent2);
                         break;
+                    case 3:
+                        Intent intent3 = new Intent(IntentMain.this, WhatsAppActivity.class); startActivity(intent3);
+                        break;
 
                 }
             }
