@@ -65,6 +65,18 @@ public class IntentMain extends AppCompatActivity {
                     case 3:
                         Intent intent3 = new Intent(IntentMain.this, WhatsAppActivity.class); startActivity(intent3);
                         break;
+                    case 4:
+                        Intent intent4 = new Intent(IntentMain.this, EmailActivity.class); startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(IntentMain.this, PhoneCallActivity.class); startActivity(intent5);
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(IntentMain.this, PlayStoreActivity.class); startActivity(intent6);
+                        break;
+                    case 7:
+                        Intent intent7 = new Intent(IntentMain.this, GoogleMapActivity.class); startActivity(intent7);
+                        break;
 
                 }
             }
