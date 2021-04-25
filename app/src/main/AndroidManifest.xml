@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".intents.runIntents.RunGoogleMap"></activity>
+        <activity android:name=".intents.runIntents.RunGoogleSearch"></activity>
+        <activity android:name=".intents.GoogleSearchActivity" />
+        <activity android:name=".intents.runIntents.RunGoogleMap" />
         <activity android:name=".intents.GoogleMapActivity" />
         <activity android:name=".intents.runIntents.RunPlayStore" />
         <activity android:name=".intents.PlayStoreActivity" />
@@ -131,9 +133,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

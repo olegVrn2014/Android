@@ -77,6 +77,9 @@ public class IntentMain extends AppCompatActivity {
                     case 7:
                         Intent intent7 = new Intent(IntentMain.this, GoogleMapActivity.class); startActivity(intent7);
                         break;
+                    case 8:
+                        Intent intent8 = new Intent(IntentMain.this, GoogleSearchActivity.class); startActivity(intent8);
+                        break;
 
                 }
             }
@@ -93,8 +96,8 @@ public class IntentMain extends AppCompatActivity {
         intentList.add("Launch Email");
         intentList.add("Launch PhoneCall");
         intentList.add("Launch PlayStore");
-        intentList.add("Launch Maps");
-        intentList.add("Intent Types");
+        intentList.add("Launch Google Map");
+        intentList.add("Launch Google Search");
         intentList.add("StartActivityForResult");
         intentList.add("Share With Social Media");
     }
