@@ -80,6 +80,12 @@ public class IntentMain extends AppCompatActivity {
                     case 8:
                         Intent intent8 = new Intent(IntentMain.this, GoogleSearchActivity.class); startActivity(intent8);
                         break;
+                    case 9:
+                        Intent intent9 = new Intent(IntentMain.this, StartActForResultActivity.class); startActivity(intent9);
+                        break;
+                    case 10:
+                        Intent intent10 = new Intent(IntentMain.this, ShareIntentActivity.class); startActivity(intent10);
+                        break;
 
                 }
             }
@@ -99,7 +105,7 @@ public class IntentMain extends AppCompatActivity {
         intentList.add("Launch Google Map");
         intentList.add("Launch Google Search");
         intentList.add("StartActivityForResult");
-        intentList.add("Share With Social Media");
+        intentList.add("Share Intent");
     }
 
     @Override

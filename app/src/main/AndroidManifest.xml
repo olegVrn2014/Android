@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".intents.runIntents.RunGoogleSearch"></activity>
+        <activity android:name=".menu.MainMenu"></activity>
+        <activity android:name=".intents.runIntents.RunShareIntent" />
+        <activity android:name=".intents.ShareIntentActivity" />
+        <activity android:name=".intents.runIntents.SecondRunStartActForResult" />
+        <activity android:name=".intents.runIntents.RunStartActForResult" />
+        <activity android:name=".intents.StartActForResultActivity" />
+        <activity android:name=".intents.runIntents.RunGoogleSearch" />
         <activity android:name=".intents.GoogleSearchActivity" />
         <activity android:name=".intents.runIntents.RunGoogleMap" />
         <activity android:name=".intents.GoogleMapActivity" />

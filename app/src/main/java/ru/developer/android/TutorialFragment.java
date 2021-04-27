@@ -12,6 +12,7 @@ import com.zolad.zoominimageview.ZoomInImageView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import ru.developer.android.intents.IntentMain;
+import ru.developer.android.menu.MainMenu;
 import ru.developer.android.toast.ToastMain;
 import ru.developer.android.widgets.WidgetsMain;
 
@@ -95,6 +96,15 @@ public class TutorialFragment extends Fragment {
     }
 
     private void ZoomImage(View view) {
+        ZoomInImageView android = view.findViewById(R.id.android);
+        android.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainMenu.class);
+                startActivity(intent);
+            }
+        });
+
         ZoomInImageView widgets = view.findViewById(R.id.widgets);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
