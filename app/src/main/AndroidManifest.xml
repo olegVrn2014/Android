@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".menu.MainMenu"></activity>
+        <activity android:name=".menu.runMenu.RunPopUpMenu"></activity>
+        <activity android:name=".menu.PopUpMenuActivity" />
+        <activity android:name=".menu.runMenu.RunContexMenu" />
+        <activity android:name=".menu.ContexMenuActivity" />
+        <activity android:name=".menu.runMenu.RunOptionMenu" />
+        <activity android:name=".menu.OptionMenuActivity" />
+        <activity android:name=".menu.MainMenu" />
         <activity android:name=".intents.runIntents.RunShareIntent" />
         <activity android:name=".intents.ShareIntentActivity" />
         <activity android:name=".intents.runIntents.SecondRunStartActForResult" />

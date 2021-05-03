@@ -59,19 +59,16 @@ public class MainMenu extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-//                        Intent intent = new Intent(MainMenu.this, ActivityLifecycle.class);
-//                        startActivity(intent);
-                        Toast.makeText(MainMenu.this, "Введение", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainMenu.this, OptionMenuActivity.class);
+                        startActivity(intent);
                         break;
                     case 1:
-//                        Intent intent = new Intent(MainMenu.this, ActivityLifecycle.class);
-//                        startActivity(intent);
-                        Toast.makeText(MainMenu.this, "Установка", Toast.LENGTH_SHORT).show();
+                        Intent intent1 = new Intent(MainMenu.this, ContexMenuActivity.class);
+                        startActivity(intent1);
                         break;
                     case 2:
-//                        Intent intent = new Intent(MainMenu.this, ActivityLifecycle.class);
-//                        startActivity(intent);
-                        Toast.makeText(MainMenu.this, "Первая программа", Toast.LENGTH_SHORT).show();
+                        Intent intent2 = new Intent(MainMenu.this, PopUpMenuActivity.class);
+                        startActivity(intent2);
                         break;
                 }
             }
@@ -81,9 +78,9 @@ public class MainMenu extends AppCompatActivity {
     private void setInitialData() {
 
         menuList = new ArrayList<>();
-        menuList.add("Введение в Android");
-        menuList.add("Установка Android Studio");
-        menuList.add("Первое приложение");
+        menuList.add("Option Menu");
+        menuList.add("Contex Menu");
+        menuList.add("PopUp Menu");
 
     }
 

@@ -96,8 +96,8 @@ public class TutorialFragment extends Fragment {
     }
 
     private void ZoomImage(View view) {
-        ZoomInImageView android = view.findViewById(R.id.android);
-        android.setOnClickListener(new View.OnClickListener() {
+        ZoomInImageView menu = view.findViewById(R.id.menu);
+        menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), MainMenu.class);

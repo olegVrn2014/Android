@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mango"
+        android:title="Манго"/>
+
+    <item android:id="@+id/apple"
+        android:title="Яблоко"/>
+
+    <item android:id="@+id/banana"
+        android:title="Банан"/>
+
+</menu>
+
+
