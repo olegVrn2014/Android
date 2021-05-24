@@ -56,19 +56,16 @@ public class MainLayouts extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        Toast.makeText(MainLayouts.this, "ConstraintActivity", Toast.LENGTH_SHORT).show();
-//                        Intent intent = new Intent(MainLayouts.this, ConstraintActivity.class);
-//                        startActivity(intent);
+                        Intent intent = new Intent(MainLayouts.this, ConstraintActivity.class);
+                        startActivity(intent);
                         break;
                     case 1:
-                        Toast.makeText(MainLayouts.this, "LinearActivity", Toast.LENGTH_SHORT).show();
-//                        Intent intent1 = new Intent(MainLayouts.this, LinearActivity.class);
-//                        startActivity(intent1);
+                        Intent intent1 = new Intent(MainLayouts.this, LinearActivity.class);
+                        startActivity(intent1);
                         break;
                     case 2:
-                        Toast.makeText(MainLayouts.this, "RelativeActivity", Toast.LENGTH_SHORT).show();
-//                        Intent intent2 = new Intent(MainLayouts.this, RelativeActivity.class);
-//                        startActivity(intent2);
+                        Intent intent2 = new Intent(MainLayouts.this, RelativeActivity.class);
+                        startActivity(intent2);
                         break;
                     case 3:
                         Toast.makeText(MainLayouts.this, "TableActivity", Toast.LENGTH_SHORT).show();

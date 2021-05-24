@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".layouts.ConstraintActivity"></activity>
+        <activity android:name=".layouts.RelativeActivity"></activity>
+        <activity android:name=".layouts.LinearActivity" />
+        <activity android:name=".layouts.ConstraintActivity" />
         <activity android:name=".layouts.MainLayouts" />
         <activity android:name=".android.AndroidManifestActivity" />
         <activity android:name=".android.CreateNewActivity" />
@@ -160,8 +162,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
