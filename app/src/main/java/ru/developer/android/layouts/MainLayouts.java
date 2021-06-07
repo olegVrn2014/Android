@@ -68,29 +68,24 @@ public class MainLayouts extends AppCompatActivity {
                         startActivity(intent2);
                         break;
                     case 3:
-                        Toast.makeText(MainLayouts.this, "TableActivity", Toast.LENGTH_SHORT).show();
-//                        Intent intent3 = new Intent(MainLayouts.this, TableActivity.class);
-//                        startActivity(intent3);
+                        Intent intent3 = new Intent(MainLayouts.this, TableActivity.class);
+                        startActivity(intent3);
                         break;
                     case 4:
-                        Toast.makeText(MainLayouts.this, "FrameActivity", Toast.LENGTH_SHORT).show();
-//                        Intent intent4 = new Intent(MainLayouts.this, FrameActivity.class);
-//                        startActivity(intent4);
+                        Intent intent4 = new Intent(MainLayouts.this, FrameActivity.class);
+                        startActivity(intent4);
                         break;
                     case 5:
-                        Toast.makeText(MainLayouts.this, "GridActivity", Toast.LENGTH_SHORT).show();
-//                        Intent intent5 = new Intent(MainLayouts.this, GridActivity.class);
-//                        startActivity(intent5);
+                        Intent intent5 = new Intent(MainLayouts.this, GridActivity.class);
+                        startActivity(intent5);
                         break;
                     case 6:
-                        Toast.makeText(MainLayouts.this, "ScrollViewActivity", Toast.LENGTH_SHORT).show();
-//                        Intent intent6 = new Intent(MainLayouts.this, ScrollViewActivity.class);
-//                        startActivity(intent6);
+                        Intent intent6 = new Intent(MainLayouts.this, ScrollViewActivity.class);
+                        startActivity(intent6);
                         break;
                     case 7:
-                        Toast.makeText(MainLayouts.this, "GravityActivity", Toast.LENGTH_SHORT).show();
-//                        Intent intent7 = new Intent(MainLayouts.this, GravityActivity.class);
-//                        startActivity(intent7);
+                        Intent intent7 = new Intent(MainLayouts.this, GravityActivity.class);
+                        startActivity(intent7);
                         break;
 
                 }

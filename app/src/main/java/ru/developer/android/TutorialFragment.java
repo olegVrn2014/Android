@@ -15,6 +15,7 @@ import ru.developer.android.android.MainAndroid;
 import ru.developer.android.intents.IntentMain;
 import ru.developer.android.layouts.MainLayouts;
 import ru.developer.android.menu.MainMenu;
+import ru.developer.android.resource.MainResource;
 import ru.developer.android.toast.ToastMain;
 import ru.developer.android.widgets.WidgetsMain;
 
@@ -113,6 +114,15 @@ public class TutorialFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(),MainLayouts.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView resource = view.findViewById(R.id.resources);
+        resource.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainResource.class);
                 startActivity(intent);
             }
         });

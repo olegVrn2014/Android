@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".layouts.RelativeActivity"></activity>
+        <activity android:name=".resource.Res5GetResources"></activity>
+        <activity android:name=".resource.Res4AccessLessons" />
+        <activity android:name=".resource.Res3PrimLessons" />
+        <activity android:name=".resource.Res2TypeLessons" />
+        <activity android:name=".resource.Res1lessons" />
+        <activity android:name=".resource.MainResource" />
+        <activity android:name=".layouts.GravityActivity" />
+        <activity android:name=".layouts.ScrollViewActivity" />
+        <activity android:name=".layouts.GridActivity" />
+        <activity android:name=".layouts.FrameActivity" />
+        <activity android:name=".layouts.TableActivity" />
+        <activity android:name=".layouts.RelativeActivity" />
         <activity android:name=".layouts.LinearActivity" />
         <activity android:name=".layouts.ConstraintActivity" />
         <activity android:name=".layouts.MainLayouts" />
@@ -163,8 +174,8 @@
             android:resource="@array/preloaded_fonts" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>
