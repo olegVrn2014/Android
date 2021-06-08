@@ -69,6 +69,10 @@ public class MainResource extends AppCompatActivity {
                         Intent intent4 = new Intent(MainResource.this, Res5GetResources.class);
                         startActivity(intent4);
                         break;
+                    case 5:
+                        Intent intent5 = new Intent(MainResource.this, Res6Lessons.class);
+                        startActivity(intent5);
+                        break;
                 }
             }
         });

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".resource.Res5GetResources"></activity>
+        <activity android:name=".resource.Res6Lessons"></activity>
+        <activity android:name=".resource.Res5GetResources" />
         <activity android:name=".resource.Res4AccessLessons" />
         <activity android:name=".resource.Res3PrimLessons" />
         <activity android:name=".resource.Res2TypeLessons" />
@@ -174,8 +175,8 @@
             android:resource="@array/preloaded_fonts" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
