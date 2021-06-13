@@ -73,6 +73,34 @@ public class MainResource extends AppCompatActivity {
                         Intent intent5 = new Intent(MainResource.this, Res6Lessons.class);
                         startActivity(intent5);
                         break;
+                    case 6:
+                        Intent intent6 = new Intent(MainResource.this, Res7FormLesson.class);
+                        startActivity(intent6);
+                        break;
+                    case 7:
+                        Intent intent7 = new Intent(MainResource.this, Res8Plurals.class);
+                        startActivity(intent7);
+                        break;
+                    case 8:
+                        Intent intent8 = new Intent(MainResource.this, Res9StringArray.class);
+                        startActivity(intent8);
+                        break;
+                    case 9:
+                        Intent intent9 = new Intent(MainResource.this, Res10Dimension.class);
+                        startActivity(intent9);
+                        break;
+                    case 10:
+                        Intent intent10 = new Intent(MainResource.this, Res11Color.class);
+                        startActivity(intent10);
+                        break;
+                    case 11:
+                        Intent intent11 = new Intent(MainResource.this, Res12.class);
+                        startActivity(intent11);
+                        break;
+                    case 12:
+                        Intent intent12 = new Intent(MainResource.this, Res13Drawable.class);
+                        startActivity(intent12);
+                        break;
                 }
             }
         });
@@ -93,7 +121,7 @@ public class MainResource extends AppCompatActivity {
         resourceList.add("Ресурсы dimension");
         resourceList.add("Ресурсы Color");
         resourceList.add("Установка цвета");
-        resourceList.add("Drawable");
+        resourceList.add("Ресурсы изображений");
 
 
     }
