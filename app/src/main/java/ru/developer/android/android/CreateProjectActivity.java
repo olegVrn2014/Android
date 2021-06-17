@@ -24,15 +24,15 @@ public class CreateProjectActivity extends AppCompatActivity {
         actionBar.setTitle("Создание нового проекта");
 
         ZoomInImageView imageCreateNewProject = findViewById(R.id.imageCreateNewProject);
-        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateProject%2FandroidStudio1.png?alt=media&token=ff12c49a-0845-418a-9621-94d23f2b2aae";
+        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateProject%2FandroidStudio1.png?alt=media&token=cc72391e-bd09-4cc1-adf4-729a0562021a";
         Glide.with(getApplicationContext()).load(url).into(imageCreateNewProject);
 
         ZoomInImageView imageSelectTemplate = findViewById(R.id.imageSelectTemplate);
-        String url1 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateProject%2FselectTemple.png?alt=media&token=3a6abffc-4378-4112-a9f6-cf3e0766e4cd";
+        String url1 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateProject%2FselectTemple.png?alt=media&token=270bcebc-9fa5-4b65-888d-583647bda943";
         Glide.with(getApplicationContext()).load(url1).into(imageSelectTemplate);
 
         ZoomInImageView imageConfigureProject = findViewById(R.id.imageConfigureProject);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateProject%2FconfigProject.png?alt=media&token=2301a386-6711-4d06-bb88-ddf33283da3a";
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateProject%2FconfigProject.png?alt=media&token=32ccb63d-6987-4f59-9b67-8278a6eac571";
         Glide.with(getApplicationContext()).load(url2).into(imageConfigureProject);
 
         ZoomInImageView imageTestApp = findViewById(R.id.imageTestApp);

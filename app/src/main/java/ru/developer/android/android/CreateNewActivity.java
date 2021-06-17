@@ -24,15 +24,15 @@ public class CreateNewActivity extends AppCompatActivity {
         actionBar.setTitle("Создание Активности");
 
         ZoomInImageView imageCreateNewActivity1 = findViewById(R.id.imageCreateNewActivity1);
-        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateNewActivity%2F1.png?alt=media&token=b27968ab-0af7-4b46-9c7b-d61dfd791708";
+        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateNewActivity%2F1.png?alt=media&token=48dff24b-369b-429e-ae08-c2e360c6701b";
         Glide.with(getApplicationContext()).load(url).into(imageCreateNewActivity1);
 
         ZoomInImageView imageCreateNewActivity2 = findViewById(R.id.imageCreateNewActivity2);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateNewActivity%2F2.png?alt=media&token=82681a15-afb6-4c4d-82c4-cf34da71ebdd";
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateNewActivity%2F2.png?alt=media&token=f56d5d1b-7829-485f-abb2-ebaa3b916e01";
         Glide.with(getApplicationContext()).load(url2).into(imageCreateNewActivity2);
 
         ZoomInImageView imageCreateNewActivity3 = findViewById(R.id.imageCreateNewActivity3);
-        String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateNewActivity%2F3.png?alt=media&token=0ed4b6d1-af7e-4ee1-9912-e3b4471f68b7";
+        String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FCreateNewActivity%2F3.png?alt=media&token=243c6118-d054-4ad6-9cf1-70cbeb35c3b7";
         Glide.with(getApplicationContext()).load(url3).into(imageCreateNewActivity3);
     }
 

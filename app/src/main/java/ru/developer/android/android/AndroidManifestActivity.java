@@ -24,7 +24,7 @@ public class AndroidManifestActivity extends AppCompatActivity {
         actionBar.setTitle("AndroidManifest.xml");
 
         ZoomInImageView imageAndroidManifest1 = findViewById(R.id.imageAndroidManifest1);
-        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FAndroidMAnifest%2F1.png?alt=media&token=2dc23ac7-c725-4a2d-999f-0b01c7d202c7";
+        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FAndroidMAnifest%2F1.png?alt=media&token=1c6b046a-0f2c-437c-a736-b4fea6f26748";
         Glide.with(getApplicationContext()).load(url).into(imageAndroidManifest1);
 
         ZoomInImageView imageAndroidManifest2 = findViewById(R.id.imageAndroidManifest2);

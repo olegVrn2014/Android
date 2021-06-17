@@ -16,6 +16,7 @@ import ru.developer.android.intents.IntentMain;
 import ru.developer.android.layouts.MainLayouts;
 import ru.developer.android.menu.MainMenu;
 import ru.developer.android.resource.MainResource;
+import ru.developer.android.styles_themes.MainStyles;
 import ru.developer.android.toast.ToastMain;
 import ru.developer.android.widgets.WidgetsMain;
 
@@ -48,19 +49,19 @@ public class TutorialFragment extends Fragment {
         Glide.with(getContext()).load(url2).into(layouts);
 
         ZoomInImageView widgets = view.findViewById(R.id.widgets);
-        String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MainPictures%2Fwidgets.png?alt=media&token=44e0c4e2-6ec1-4d81-91f2-54af7a7ed127";
+        String url5 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MainPictures%2Fwidgets.png?alt=media&token=44e0c4e2-6ec1-4d81-91f2-54af7a7ed127";
         widgets.setClipToOutline(true);
-        Glide.with(getContext()).load(url3).into(widgets);
+        Glide.with(getContext()).load(url5).into(widgets);
 
         ZoomInImageView resources = view.findViewById(R.id.resources);
-        String url4 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MainPictures%2Fresources.jpg?alt=media&token=95bd6802-942c-4e9c-b2e0-83d20f6f1a51";
+        String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MainPictures%2Fresources.jpg?alt=media&token=95bd6802-942c-4e9c-b2e0-83d20f6f1a51";
         resources.setClipToOutline(true);
-        Glide.with(getContext()).load(url4).into(resources);
+        Glide.with(getContext()).load(url3).into(resources);
 
         ZoomInImageView stylesThemes = view.findViewById(R.id.styles_themes);
-        String url5 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MainPictures%2Fstyle-themes.jpg?alt=media&token=e90c5dc6-30c7-4400-b269-556177f53fd2";
+        String url4 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MainPictures%2Fstyle-themes.jpg?alt=media&token=e90c5dc6-30c7-4400-b269-556177f53fd2";
         stylesThemes.setClipToOutline(true);
-        Glide.with(getContext()).load(url5).into(stylesThemes);
+        Glide.with(getContext()).load(url4).into(stylesThemes);
 
         ZoomInImageView toast = view.findViewById(R.id.toast);
         String url6 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MainPictures%2Ftoast.png?alt=media&token=9ad00a23-d80d-41a4-a4f0-d0a55470fc72";
@@ -158,6 +159,15 @@ public class TutorialFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), IntentMain.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView styles = view.findViewById(R.id.styles_themes);
+        styles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainStyles.class);
                 startActivity(intent);
             }
         });

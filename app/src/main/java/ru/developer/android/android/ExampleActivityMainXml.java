@@ -24,7 +24,7 @@ public class ExampleActivityMainXml extends AppCompatActivity {
         actionBar.setTitle("Обзор activity_main.xml");
 
         ZoomInImageView imageExampleActivityMainXml = findViewById(R.id.imageExampleActivityMainXml);
-        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FExampleActivityMainXml%2Fact_main_design.png?alt=media&token=4bb122eb-85b2-4c06-832d-1b111847d143";
+        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FExampleActivityMainXml%2Fact_main_design.png?alt=media&token=7b99b5fd-cac5-41ac-a473-ddb453986bd1";
         Glide.with(getApplicationContext()).load(url).into(imageExampleActivityMainXml);
 
         ZoomInImageView imageActivityMainXml = findViewById(R.id.imageActivityMainXml);

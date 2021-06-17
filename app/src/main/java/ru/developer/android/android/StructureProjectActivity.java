@@ -32,19 +32,19 @@ public class StructureProjectActivity extends AppCompatActivity {
         Glide.with(getApplicationContext()).load(url1).into(imageManifest);
 
         ZoomInImageView imageJavaProject = findViewById(R.id.imageJavaProject);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FStructureProject%2FMainActivity.png?alt=media&token=5d4699a1-f4ed-4913-81dc-1b197f62b1e5";
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FStructureProject%2FMainActivity.png?alt=media&token=e0d96f00-c031-48f5-9f26-9b833b3ec9e7";
         Glide.with(getApplicationContext()).load(url2).into(imageJavaProject);
 
         ZoomInImageView imageRes = findViewById(R.id.imageRes);
-        String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FStructureProject%2Fres.png?alt=media&token=d5dc0e21-e895-492a-abc5-b65d64b2df89";
+        String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FStructureProject%2Fres.png?alt=media&token=11ff98cd-05ec-49dc-baac-449010c13c2d";
         Glide.with(getApplicationContext()).load(url3).into(imageRes);
 
         ZoomInImageView imageValues = findViewById(R.id.imageValues);
-        String url4 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FStructureProject%2Fvalues.png?alt=media&token=08490992-d055-438a-aa8a-77cacf710c21";
+        String url4 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FStructureProject%2Fvalues.png?alt=media&token=7e6d2258-f70f-43d2-b2e8-f766ee426326";
         Glide.with(getApplicationContext()).load(url4).into(imageValues);
 
         ZoomInImageView imageGradleScripts = findViewById(R.id.imageGradleScripts);
-        String url5 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FStructureProject%2FGradle.png?alt=media&token=b70605ab-7755-439a-9fba-949915f87ebf";
+        String url5 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Android%2FStructureProject%2FGradle.png?alt=media&token=1ed5cd0a-9d4a-4a79-bb94-aac23c2f69c6";
         Glide.with(getApplicationContext()).load(url5).into(imageGradleScripts);
 
     }

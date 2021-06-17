@@ -46,12 +46,12 @@
                         android:background="@drawable/style_zoom_image"/>
 
                     <com.zolad.zoominimageview.ZoomInImageView
-                        android:id="@+id/widgets"
+                        android:id="@+id/resources"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/style_zoom_image"/>
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"/>
 
                 </LinearLayout>
 
@@ -62,15 +62,15 @@
                     android:weightSum="3">
 
                     <com.zolad.zoominimageview.ZoomInImageView
-                        android:id="@+id/resources"
+                        android:id="@+id/styles_themes"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:background="@drawable/style_zoom_image"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"/>
 
                     <com.zolad.zoominimageview.ZoomInImageView
-                        android:id="@+id/styles_themes"
+                        android:id="@+id/widgets"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
