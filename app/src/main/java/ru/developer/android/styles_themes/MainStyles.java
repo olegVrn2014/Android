@@ -59,6 +59,14 @@ public class MainStyles extends AppCompatActivity {
                         Intent intent = new Intent(MainStyles.this, StylesLess1.class);
                         startActivity(intent);
                         break;
+                    case 1:
+                        Intent intent1 = new Intent(MainStyles.this, ThemesLess2.class);
+                        startActivity(intent1);
+                        break;
+                    case 2:
+                        Intent intent2 = new Intent(MainStyles.this, ThemesLess3.class);
+                        startActivity(intent2);
+                        break;
 
                 }
             }
