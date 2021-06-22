@@ -19,7 +19,7 @@
 
             <TextView
                 style="@style/TextStylesTextView"
-                android:text=""/>
+                android:text="@string/ThemesLess3_1"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -34,7 +34,7 @@
 
             <TextView
                 style="@style/TextStylesTextView"
-                android:text=""/>
+                android:text="@string/ThemesLess3_2"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -49,7 +49,7 @@
 
             <TextView
                 style="@style/TextStylesTextView"
-                android:text=""/>
+                android:text="@string/ThemesLess3_3"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -64,7 +64,7 @@
 
             <TextView
                 style="@style/TextStylesTextView"
-                android:text=""/>
+                android:text="@string/ThemesLess3_4"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -79,7 +79,7 @@
 
             <TextView
                 style="@style/TextStylesTextView"
-                android:text=""/>
+                android:text="@string/ThemesLess3_5"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

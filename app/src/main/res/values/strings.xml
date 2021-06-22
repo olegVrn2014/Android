@@ -305,4 +305,10 @@
     <string name="themesLess2_5">И соответственно изменится цвет по умолчанию для фона заголовка и кнопки:</string>
     <string name="themesLess2_6">Запускаем:</string>
 
+    <string name="ThemesLess3_1">Вместо использования встроенных тем мы можем создать свою.\n\nДля этого добавим в папку <b>res/values</b> новый файл <b>mythemes.xml</b></string>
+    <string name="ThemesLess3_2">И определим в нем следующее содержимое:</string>
+    <string name="ThemesLess3_3">Итак, мы создали стиль <b>MyTheme</b>, который унаследован от стиля <b>Theme.AppCompat.Light</b>.\n\nВ этом стиле мы переопределили два свойства: высоту шрифта (<b>textSize</b>), а также цвет текста (<b>textColor</b>).\n\nТеперь определим этот стиль в качестве темы приложения в файле <b>AndroidManifest.xml</b>:</string>
+    <string name="ThemesLess3_4">Делаем такую разметку в <b>activity_main.xml</b></string>
+    <string name="ThemesLess3_5">Как видно, для элементов <b>TextView</b> не устанавливается атрибут <b>textSize</b> и <b>textColor</b>, однако поскольку они определены в теме, которая применяется глобально к нашему приложению, то элементы <b>TextView</b> будут подхватывать эти стилевые характеристики:</string>
+
 </resources>
