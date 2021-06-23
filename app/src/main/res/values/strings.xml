@@ -311,4 +311,9 @@
     <string name="ThemesLess3_4">Делаем такую разметку в <b>activity_main.xml</b></string>
     <string name="ThemesLess3_5">Как видно, для элементов <b>TextView</b> не устанавливается атрибут <b>textSize</b> и <b>textColor</b>, однако поскольку они определены в теме, которая применяется глобально к нашему приложению, то элементы <b>TextView</b> будут подхватывать эти стилевые характеристики:</string>
 
+    <string name="Theme4_1">Выше темы применялись глобально ко всему приложению. Но также можно применить их к отдельному классу <b>Activity</b>.\n\nДля этого надо подкоррективать файл манифеста <b>AndroidManifest.xml</b>\n\nНапример:</string>
+    <string name="Theme4_2">Атрибут <b>android:theme</b> элемента <b>activity</b> указывает на применяемую к <b>MainActivity</b> тему.\n\nТо есть глобально к приложению применяется тема <b>Theme.Test</b>, а к <b>MainActivity</b> - <b>MyTheme</b></string>
+    <string name="Theme4_3"><u>Применение темы к иерархии виджетов</u></string>
+    <string name="Theme4_4">Также можно применить тему к иерархии виджетов, установив атрибут <b>android:theme</b> у элемента, к которому (включая его вложенные элементы) мы хотим применить тему.\n\nНапример, применение темы к <b>ConstraintLayout</b> и ее элементам:</string>
+
 </resources>
