@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".widgets.ImageSwitcherActivity">
+    tools:context=".containers.GridViewLess2">
 
 
     <ScrollView
@@ -40,8 +40,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,44 +59,7 @@
                 <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/imageActivity"
                     style="@style/ZoomImageView"/>
-
             </androidx.cardview.widget.CardView>
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/coda"
-                android:text="Дополнительно"
-                android:gravity="center_horizontal"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/coda"
-                android:text="Добавляем любые изображения в папку drawable"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/color_primary">
-
-                <com.zolad.zoominimageview.ZoomInImageView
-                    android:id="@+id/imageSwitcherDrawable"
-                   style="@style/ZoomImageView"
-                    android:layout_marginBottom="20dp"/>
-
-            </androidx.cardview.widget.CardView>
-
-
 
         </LinearLayout>
 
