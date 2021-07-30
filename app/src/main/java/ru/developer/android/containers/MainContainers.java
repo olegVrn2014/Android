@@ -25,6 +25,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import java.util.ArrayList;
 
@@ -65,6 +66,9 @@ public class MainContainers extends AppCompatActivity {
                         break;
                     case 2:
                         Intent intent2 = new Intent(MainContainers.this, WebViewLess3.class); startActivity(intent2);
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(MainContainers.this, SearchViewLess4.class); startActivity(intent3);
                         break;
                 }
             }

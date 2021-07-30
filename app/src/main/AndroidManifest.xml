@@ -6,11 +6,13 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".containers.runContainer.RunWebView"></activity>
+        android:theme="@style/Theme.AndroidApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".containers.runContainer.RunSearchView"></activity>
+        <activity android:name=".containers.SearchViewLess4" />
+        <activity android:name=".containers.runContainer.RunWebView" />
         <activity android:name=".containers.WebViewLess3" />
         <activity android:name=".containers.runContainer.RunGridView" />
         <activity android:name=".containers.GridViewLess2" />
@@ -200,8 +202,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
