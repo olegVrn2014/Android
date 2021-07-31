@@ -70,6 +70,9 @@ public class MainContainers extends AppCompatActivity {
                     case 3:
                         Intent intent3 = new Intent(MainContainers.this, SearchViewLess4.class); startActivity(intent3);
                         break;
+                    case 4:
+                        Intent intent4 = new Intent(MainContainers.this, SearchViewOnToolbar.class); startActivity(intent4);
+                        break;
                 }
             }
         });
