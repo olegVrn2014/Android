@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import ru.developer.android.android.MainAndroid;
 import ru.developer.android.containers.MainContainers;
+import ru.developer.android.dateTime.MainDateTime;
 import ru.developer.android.intents.IntentMain;
 import ru.developer.android.layouts.MainLayouts;
 import ru.developer.android.menu.MainMenu;
@@ -254,6 +255,15 @@ public class TutorialFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), MainContainers.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView dateTime = view.findViewById(R.id.dateTime);
+        dateTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainDateTime.class);
                 startActivity(intent);
             }
         });

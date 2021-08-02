@@ -86,10 +86,7 @@ public class MainContainers extends AppCompatActivity {
         containersList.add("WebView");
         containersList.add("SearchView");
         containersList.add("SearchView toolbar");
-        containersList.add("Custom ListView");
-        containersList.add("Expandable ListView");
-        containersList.add("RecyclerView");
-        containersList.add("HTTP URL Connections");
+
     }
 
     @Override
