@@ -4,8 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import ru.developer.android.R;
-import ru.developer.android.dateTime.runDateTime.RunDatePicker;
-import ru.developer.android.dateTime.runDateTime.RunDigitalClock;
+import ru.developer.android.dateTime.runDateTime.RunDatePickerDialog;
+import ru.developer.android.dateTime.runDateTime.RunTimePicker;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,25 +16,25 @@ import android.view.MenuItem;
 import com.bumptech.glide.Glide;
 import com.zolad.zoominimageview.ZoomInImageView;
 
-public class DatePicker extends AppCompatActivity {
+public class DatePickerDialog extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_date_picker);
+        setContentView(R.layout.activity_date_picker_dialog);
 
         ActionBar actionBar = this.getSupportActionBar();
         if (actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        actionBar.setTitle("DatePicker");
+        actionBar.setTitle("DatePickerDialog");
 
         ZoomInImageView imageXML = findViewById(R.id.imageXML);
-        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/DateTime%2FDatePicker%2Fxml.png?alt=media&token=b00e15d3-653e-4ba2-aeed-a5c68efc07e9";
+        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/DateTime%2FDatePickerDialog%2Fxml.png?alt=media&token=0cbba609-8e57-4b9c-91c0-ac44e0ae0041";
         Glide.with(getApplicationContext()).load(url).into(imageXML);
 
         ZoomInImageView imageActivity = findViewById(R.id.imageActivity);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/DateTime%2FDatePicker%2Factivity.png?alt=media&token=9e5f8fbd-1afa-44b8-ae16-a95590fd3978";
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/DateTime%2FDatePickerDialog%2Factivity.png?alt=media&token=a75867bd-24ad-43be-99ef-766fe35a0693";
         Glide.with(getApplicationContext()).load(url2).into(imageActivity);
     }
 
@@ -52,7 +52,7 @@ public class DatePicker extends AppCompatActivity {
             finish();
             return true;
         }else{
-            Intent intent = new Intent(DatePicker.this, RunDatePicker.class);startActivity(intent);
+            Intent intent = new Intent(DatePickerDialog.this, RunDatePickerDialog.class);startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

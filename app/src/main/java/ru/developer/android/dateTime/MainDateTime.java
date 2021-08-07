@@ -63,7 +63,12 @@ public class MainDateTime extends AppCompatActivity {
                     case 3:
                         Intent intent3 = new Intent(MainDateTime.this, DatePicker.class); startActivity(intent3);
                         break;
-
+                    case 4:
+                        Intent intent4 = new Intent(MainDateTime.this, TimePicker.class); startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(MainDateTime.this, DatePickerDialog.class); startActivity(intent5);
+                        break;
                 }
             }
         });

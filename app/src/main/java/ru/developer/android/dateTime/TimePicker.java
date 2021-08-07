@@ -5,7 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import ru.developer.android.R;
 import ru.developer.android.dateTime.runDateTime.RunDatePicker;
-import ru.developer.android.dateTime.runDateTime.RunDigitalClock;
+import ru.developer.android.dateTime.runDateTime.RunTimePicker;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,25 +16,25 @@ import android.view.MenuItem;
 import com.bumptech.glide.Glide;
 import com.zolad.zoominimageview.ZoomInImageView;
 
-public class DatePicker extends AppCompatActivity {
+public class TimePicker extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_date_picker);
+        setContentView(R.layout.activity_time_picker);
 
         ActionBar actionBar = this.getSupportActionBar();
         if (actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        actionBar.setTitle("DatePicker");
+        actionBar.setTitle("TimePicker");
 
         ZoomInImageView imageXML = findViewById(R.id.imageXML);
-        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/DateTime%2FDatePicker%2Fxml.png?alt=media&token=b00e15d3-653e-4ba2-aeed-a5c68efc07e9";
+        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/DateTime%2FTimePicker%2Fxml.png?alt=media&token=b6c67aa5-284b-42a4-962a-2451c2ac1d5b";
         Glide.with(getApplicationContext()).load(url).into(imageXML);
 
         ZoomInImageView imageActivity = findViewById(R.id.imageActivity);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/DateTime%2FDatePicker%2Factivity.png?alt=media&token=9e5f8fbd-1afa-44b8-ae16-a95590fd3978";
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/DateTime%2FTimePicker%2FActivity.png?alt=media&token=d2499be8-f689-4635-a79e-8d7ee931b419";
         Glide.with(getApplicationContext()).load(url2).into(imageActivity);
     }
 
@@ -52,7 +52,7 @@ public class DatePicker extends AppCompatActivity {
             finish();
             return true;
         }else{
-            Intent intent = new Intent(DatePicker.this, RunDatePicker.class);startActivity(intent);
+            Intent intent = new Intent(TimePicker.this, RunTimePicker.class);startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

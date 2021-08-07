@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".dateTime.runDateTime.RunDatePicker"></activity>
-        <activity android:name=".dateTime.runDateTime.RunDatePicker]\" />
+        <activity android:name=".dateTime.runDateTime.RunDatePickerDialog"></activity>
+        <activity android:name=".dateTime.DatePickerDialog" />
+        <activity android:name=".dateTime.runDateTime.RunTimePicker" />
+        <activity android:name=".dateTime.TimePicker" />
+        <activity android:name=".dateTime.runDateTime.RunDatePicker" />
         <activity android:name=".dateTime.DatePicker" />
         <activity android:name=".dateTime.runDateTime.RunDigitalClock" />
         <activity android:name=".dateTime.DigitalClock" />
