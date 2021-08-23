@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".dateTime.runDateTime.RunDatePickerDialog">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/currentDateTime"
@@ -15,10 +15,10 @@
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/dateButton"
+        android:id="@+id/timeButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Изменить дату"
-        android:onClick="setDate"/>
+        android:text="Изменить время"
+        android:onClick="setTime"/>
 
 </LinearLayout>

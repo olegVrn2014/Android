@@ -5,18 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import ru.developer.android.MainActivity;
 import ru.developer.android.R;
 
-import android.app.DatePickerDialog;
-import android.app.Dialog;
+import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.TimePicker;
 
 import java.util.Calendar;
 
-public class RunDatePickerDialog extends AppCompatActivity {
+public class RunTimePickerDialog extends AppCompatActivity {
 
     TextView currentDateTime;
     Calendar dateAndTime=Calendar.getInstance();
@@ -24,28 +23,26 @@ public class RunDatePickerDialog extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_run_date_picker_dialog);
+        setContentView(R.layout.activity_run_time_picker_dialog);
 
         ActionBar actionBar = this.getSupportActionBar();
         if (actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        actionBar.setTitle("DatePickerDialog");
+        actionBar.setTitle("TimePickerDialog");
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         currentDateTime=(TextView)findViewById(R.id.currentDateTime);
         setInitialDateTime();
     }
-    // отображаем диалоговое окно для выбора даты
-    public void setDate(View v) {
-        new DatePickerDialog(RunDatePickerDialog.this, d,
-                dateAndTime.get(Calendar.YEAR),
-                dateAndTime.get(Calendar.MONTH),
-                dateAndTime.get(Calendar.DAY_OF_MONTH))
+    // отображаем диалоговое окно для выбора времени
+    public void setTime(View v) {
+        new TimePickerDialog(RunTimePickerDialog.this, t,
+                dateAndTime.get(Calendar.HOUR_OF_DAY),
+                dateAndTime.get(Calendar.MINUTE), true)
                 .show();
     }
-
     // установка начальных даты и времени
     private void setInitialDateTime() {
 
@@ -55,15 +52,16 @@ public class RunDatePickerDialog extends AppCompatActivity {
                         | DateUtils.FORMAT_SHOW_TIME));
     }
 
-    // установка обработчика выбора даты
-    DatePickerDialog.OnDateSetListener d=new DatePickerDialog.OnDateSetListener() {
-        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-            dateAndTime.set(Calendar.YEAR, year);
-            dateAndTime.set(Calendar.MONTH, monthOfYear);
-            dateAndTime.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+    // установка обработчика выбора времени
+    TimePickerDialog.OnTimeSetListener t=new TimePickerDialog.OnTimeSetListener() {
+        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+            dateAndTime.set(Calendar.HOUR_OF_DAY, hourOfDay);
+            dateAndTime.set(Calendar.MINUTE, minute);
             setInitialDateTime();
         }
     };
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -73,5 +71,4 @@ public class RunDatePickerDialog extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

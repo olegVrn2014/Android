@@ -16,6 +16,7 @@ import ru.developer.android.containers.MainContainers;
 import ru.developer.android.dateTime.MainDateTime;
 import ru.developer.android.intents.IntentMain;
 import ru.developer.android.layouts.MainLayouts;
+import ru.developer.android.material_design.MaterialDesignMain;
 import ru.developer.android.menu.MainMenu;
 import ru.developer.android.resource.MainResource;
 import ru.developer.android.styles_themes.MainStyles;
@@ -264,6 +265,15 @@ public class TutorialFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), MainDateTime.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView material_design = view.findViewById(R.id.materialDesign);
+        material_design.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MaterialDesignMain.class);
                 startActivity(intent);
             }
         });

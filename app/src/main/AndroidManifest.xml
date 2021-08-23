@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".dateTime.runDateTime.RunDatePickerDialog"></activity>
+        <activity android:name=".material_design.runMaterialDesign.RunSnackBar"></activity>
+        <activity android:name=".material_design.SnackBarActivity" />
+        <activity android:name=".material_design.runMaterialDesign.RunFloating" />
+        <activity android:name=".material_design.FloatingActivity" />
+        <activity android:name=".material_design.MaterialDesignMain" />
+        <activity android:name=".dateTime.runDateTime.RunChronometr" />
+        <activity android:name=".dateTime.Chronometr" />
+        <activity android:name=".dateTime.runDateTime.RunTimePickerDialog" />
+        <activity android:name=".dateTime.TimePickerDialog" />
+        <activity android:name=".dateTime.runDateTime.RunDatePickerDialog" />
         <activity android:name=".dateTime.DatePickerDialog" />
         <activity android:name=".dateTime.runDateTime.RunTimePicker" />
         <activity android:name=".dateTime.TimePicker" />
