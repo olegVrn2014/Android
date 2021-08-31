@@ -76,7 +76,7 @@ public class MaterialDesignMain extends AppCompatActivity {
                         Intent intent1 = new Intent(MaterialDesignMain.this, SnackBarActivity.class); startActivity(intent1);
                         break;
                     case 2:
-                       // Intent intent2 = new Intent(MaterialDesignMain.this, BoottomSheetsActivity.class); startActivity(intent2);
+                        Intent intent2 = new Intent(MaterialDesignMain.this, BottomSheetsActivity.class); startActivity(intent2);
                         break;
                 }
             }

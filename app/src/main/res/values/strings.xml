@@ -316,4 +316,8 @@
     <string name="Theme4_3"><u>Применение темы к иерархии виджетов</u></string>
     <string name="Theme4_4">Также можно применить тему к иерархии виджетов, установив атрибут <b>android:theme</b> у элемента, к которому (включая его вложенные элементы) мы хотим применить тему.\n\nНапример, применение темы к <b>ConstraintLayout</b> и ее элементам:</string>
 
+    <string name="animations_fade01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём два <b>xml</b> файла как показано на скриншоте</string>
+    <string name="animations_move01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём четыре <b>xml</b> файла как показано на скриншоте</string>
+    <string name="animations_rotate01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём два <b>xml</b> файла как показано на скриншоте</string>
+
 </resources>

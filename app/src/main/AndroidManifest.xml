@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".material_design.runMaterialDesign.RunSnackBar"></activity>
+        <activity android:name=".animations.runAnimations.RunRotateActivity"></activity>
+        <activity android:name=".animations.RotateActivity" />
+        <activity android:name=".animations.runAnimations.RunMoveActivity" />
+        <activity android:name=".animations.MoveActivity" />
+        <activity android:name=".animations.runAnimations.RunFadeActivity" />
+        <activity android:name=".animations.FadeActivity" />
+        <activity android:name=".animations.MainAnimations" />
+        <activity android:name=".material_design.runMaterialDesign.RunBottomSheets" />
+        <activity android:name=".material_design.BottomSheetsActivity" />
+        <activity android:name=".material_design.runMaterialDesign.RunSnackBar" />
         <activity android:name=".material_design.SnackBarActivity" />
         <activity android:name=".material_design.runMaterialDesign.RunFloating" />
         <activity android:name=".material_design.FloatingActivity" />
