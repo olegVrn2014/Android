@@ -56,7 +56,21 @@ public class MainAnimations extends AppCompatActivity {
                     case 2:
                         Intent intent2 = new Intent(MainAnimations.this,RotateActivity.class); startActivity(intent2);
                         break;
-
+                    case 3:
+                        Intent intent3 = new Intent(MainAnimations.this,ZoomActivity.class); startActivity(intent3);
+                        break;
+                    case 4:
+                        Intent intent4 = new Intent(MainAnimations.this,SlideActivity.class); startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(MainAnimations.this,BounceActivity.class); startActivity(intent5);
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(MainAnimations.this,BlinkActivity.class); startActivity(intent6);
+                        break;
+                    case 7:
+                        Intent intent7 = new Intent(MainAnimations.this,InterpolatorActivity.class); startActivity(intent7);
+                        break;
                 }
             }
         });
@@ -74,9 +88,6 @@ public class MainAnimations extends AppCompatActivity {
         animations_list.add("Bounce");
         animations_list.add("Blink");
         animations_list.add("Interpolator");
-        animations_list.add("Cell");
-        animations_list.add("Tween");
-
     }
 
 

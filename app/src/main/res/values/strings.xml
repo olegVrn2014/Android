@@ -319,5 +319,8 @@
     <string name="animations_fade01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём два <b>xml</b> файла как показано на скриншоте</string>
     <string name="animations_move01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём четыре <b>xml</b> файла как показано на скриншоте</string>
     <string name="animations_rotate01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём два <b>xml</b> файла как показано на скриншоте</string>
+    <string name="animations_slide01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём четыре <b>xml</b> файла как показано на скриншоте</string>
+    <string name="animations_bounce01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём <b>xml</b> файл как показано на скриншоте</string>
+    <string name="animations_blink01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём <b>xml</b> файл как показано на скриншоте</string>
 
 </resources>

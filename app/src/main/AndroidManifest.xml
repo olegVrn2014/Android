@@ -10,7 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".animations.runAnimations.RunRotateActivity"></activity>
+        <activity android:name=".multimedia.runMultimedia.RunMultimediaActivity"></activity>
+        <activity android:name=".multimedia.MediaPlayerActivity" />
+        <activity android:name=".multimedia.MainMultimedia" />
+        <activity android:name=".animations.runAnimations.RunInterpolatorActivity" />
+        <activity android:name=".animations.InterpolatorActivity" />
+        <activity android:name=".animations.runAnimations.RunBlinkActivity" />
+        <activity android:name=".animations.BlinkActivity" />
+        <activity android:name=".animations.runAnimations.RunBounceActivity" />
+        <activity android:name=".animations.BounceActivity" />
+        <activity android:name=".animations.runAnimations.RunSlideActivity" />
+        <activity android:name=".animations.SlideActivity" />
+        <activity android:name=".animations.runAnimations.RunZoomActivity" />
+        <activity android:name=".animations.ZoomActivity" />
+        <activity android:name=".animations.runAnimations.RunRotateActivity" />
         <activity android:name=".animations.RotateActivity" />
         <activity android:name=".animations.runAnimations.RunMoveActivity" />
         <activity android:name=".animations.MoveActivity" />
@@ -235,8 +248,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
