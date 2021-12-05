@@ -42,6 +42,7 @@ public class PhoneCallActivity extends AppCompatActivity {
         String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/Telephone%20Manager%2FPhone%20Call%2Fmanifest.png?alt=media&token=08b56bb1-7e57-433b-bdbf-bf45eca08ceb";
         Glide.with(getApplicationContext()).load(url3).into(imageAndroidManifest);
 
+
     }
 
     @Override
