@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Objects.requireNonNull(tabLayout.getTabAt(0)).setText(R.string.tutorial_android);
         Objects.requireNonNull(tabLayout.getTabAt(1)).setText(R.string.Questions);
+        Objects.requireNonNull(tabLayout.getTabAt(2)).setText("Термины");
     }
 
 
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new TutorialFragment());
         adapter.addFragment(new QuestionsFragment());
+        adapter.addFragment(new TermsFragment());
         viewPager.setAdapter(adapter);
     }
 }

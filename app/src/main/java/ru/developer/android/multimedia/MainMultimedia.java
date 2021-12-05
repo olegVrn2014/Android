@@ -20,6 +20,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -55,10 +56,11 @@ public class MainMultimedia extends AppCompatActivity {
                           Intent intent = new Intent(MainMultimedia.this,MediaPlayerActivity.class); startActivity(intent);
                         break;
                     case 1:
-                        //   Intent intent1 = new Intent(MainMultimedia.this,......class); startActivity(intent1);
+                          Intent intent1 = new Intent(MainMultimedia.this,VideoPlayerActivity.class); startActivity(intent1);
                         break;
                     case 2:
-                        //   Intent intent2 = new Intent(MainMultimedia.this,......class); startActivity(intent2);
+                        Toast.makeText(MainMultimedia.this, "Урок на доработке", Toast.LENGTH_SHORT).show();
+                         //  Intent intent2 = new Intent(MainMultimedia.this,RecordingActivity.class); startActivity(intent2);
                         break;
                 }
             }

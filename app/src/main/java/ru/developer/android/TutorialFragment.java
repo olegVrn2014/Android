@@ -11,17 +11,23 @@ import com.zolad.zoominimageview.ZoomInImageView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import ru.developer.android.alarm_manager.MainAlarmManager;
 import ru.developer.android.android.MainAndroid;
 import ru.developer.android.animations.MainAnimations;
+import ru.developer.android.camera_sensor.MainCameraSensor;
 import ru.developer.android.containers.MainContainers;
 import ru.developer.android.dateTime.MainDateTime;
+import ru.developer.android.fragment.MainFragments;
 import ru.developer.android.intents.IntentMain;
 import ru.developer.android.layouts.MainLayouts;
 import ru.developer.android.material_design.MaterialDesignMain;
 import ru.developer.android.menu.MainMenu;
 import ru.developer.android.multimedia.MainMultimedia;
 import ru.developer.android.resource.MainResource;
+import ru.developer.android.service.MainService;
 import ru.developer.android.styles_themes.MainStyles;
+import ru.developer.android.tel_manager.MainTelephoneManager;
 import ru.developer.android.toast.ToastMain;
 import ru.developer.android.widgets.WidgetsMain;
 
@@ -294,6 +300,51 @@ public class TutorialFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), MainMultimedia.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView camera_sensor = view.findViewById(R.id.camera_sensor);
+        camera_sensor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainCameraSensor.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView fragments = view.findViewById(R.id.fragment);
+        fragments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainFragments.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView service = view.findViewById(R.id.service);
+        service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainService.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView alarm_manager = view.findViewById(R.id.alarm);
+        alarm_manager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainAlarmManager.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView telephone_manager = view.findViewById(R.id.telephony);
+        telephone_manager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainTelephoneManager.class);
                 startActivity(intent);
             }
         });

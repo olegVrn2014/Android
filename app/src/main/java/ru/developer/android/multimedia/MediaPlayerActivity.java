@@ -31,12 +31,16 @@ public class MediaPlayerActivity extends AppCompatActivity {
         actionBar.setTitle("Media player");
 
         ZoomInImageView imageXML = findViewById(R.id.imageXML);
-        String url = "";
+        String url = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MultiMedia%2FMediaPlayer%2Fxml.png?alt=media&token=5ef56a38-b6a5-4912-99cd-3633694679c0";
         Glide.with(getApplicationContext()).load(url).into(imageXML);
 
         ZoomInImageView imageActivity = findViewById(R.id.imageActivity);
-        String url2 = "";
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MultiMedia%2FMediaPlayer%2Factivity.jpg?alt=media&token=4a211fb6-847a-4efe-8375-3d27e8c4b1ac";
         Glide.with(getApplicationContext()).load(url2).into(imageActivity);
+
+        ZoomInImageView imageRaw = findViewById(R.id.imageRaw);
+        String url3 = "https://firebasestorage.googleapis.com/v0/b/android-app-5b365.appspot.com/o/MultiMedia%2FMediaPlayer%2Fraw.png?alt=media&token=974c3f79-5bf8-485a-badc-1f733b767363";
+        Glide.with(getApplicationContext()).load(url3).into(imageRaw);
 
     }
     @Override

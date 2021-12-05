@@ -2,8 +2,8 @@
     <string name="app_name">Android App</string>
     <string name="activity_main_xml">activity_main.xml</string>
     <string name="mainActivity_java">MainActivity.java</string>
-    <string name="tutorial_android">Руков-во ANDROID</string>
-    <string name="Questions">Вопросы-Ответы</string>
+    <string name="tutorial_android">Основы</string>
+    <string name="Questions">Вопросы</string>
     <string name="share">Поделиться</string>
     <string name="rating">Оценить</string>
     <string name="settings">Настройки</string>
@@ -322,5 +322,7 @@
     <string name="animations_slide01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём четыре <b>xml</b> файла как показано на скриншоте</string>
     <string name="animations_bounce01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём <b>xml</b> файл как показано на скриншоте</string>
     <string name="animations_blink01">В папке <b>res</b> создаём папку <b>anim</b>. В ней создаём <b>xml</b> файл как показано на скриншоте</string>
+    <string name="mediaPlayer">В папке <b>res</b> создаём новую папку <b>raw</b>. \nВ эту папку добавляем аудио файл</string>
+    <string name="videoPlayer">В папке <b>res</b> создаём новую папку <b>raw</b>. \nВ эту папку добавляем видео файл</string>
 
 </resources>
