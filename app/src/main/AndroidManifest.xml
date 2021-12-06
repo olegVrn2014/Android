@@ -20,6 +20,12 @@
         android:theme="@style/Theme.AndroidApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".tel_manager.run.RunSendEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tel_manager.SendEmailActivity"
+            android:exported="false" />
+        <activity
             android:name=".tel_manager.run.RunPhoneCallActivity"
             android:exported="false" />
         <activity

@@ -54,6 +54,10 @@ public class MainTelephoneManager extends AppCompatActivity {
                         Intent intent1 = new Intent(MainTelephoneManager.this, PhoneCallActivity.class);
                         startActivity(intent1);
                         break;
+                    case 2:
+                        Intent intent2 = new Intent(MainTelephoneManager.this, SendEmailActivity.class);
+                        startActivity(intent2);
+                        break;
 
                 }
             }
