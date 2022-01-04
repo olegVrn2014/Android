@@ -10,15 +10,69 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_1_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".notifications.run.RunSimpleNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".notifications.SimpleNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".notifications.MainNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".wifi.run.RunScanWifiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wifi.ScanWifiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wifi.run.RunInfoWifi"
+            android:exported="false" />
+        <activity
+            android:name=".wifi.infoWifi"
+            android:exported="false" />
+        <activity
+            android:name=".wifi.run.RunChangeWifi"
+            android:exported="false" />
+        <activity
+            android:name=".wifi.ChangeWifi"
+            android:exported="false" />
+        <activity
+            android:name=".wifi.MainWifi"
+            android:exported="false" />
+        <activity
+            android:name=".google_map.run.RunCurrentLocation"
+            android:exported="false" />
+        <activity
+            android:name=".google_map.CurrentLocation"
+            android:exported="false" />
+        <activity
+            android:name=".google_map.run.RunGoogleMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".google_map.GoogleMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".google_map.MainGoogleMap"
+            android:exported="false" />
+        <activity
+            android:name=".tel_manager.run.RunReadContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tel_manager.ReadContactActivity"
+            android:exported="false" />
         <activity
             android:name=".tel_manager.run.RunSendEmailActivity"
             android:exported="false" />

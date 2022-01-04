@@ -1,4 +1,4 @@
-package ru.developer.android.tel_manager;
+package ru.developer.android.wifi;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,53 +14,49 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import ru.developer.android.R;
-import ru.developer.android.intents.runIntents.RunPhoneCall;
-import ru.developer.android.tel_manager.run.RunPhoneCallActivity;
+import ru.developer.android.google_map.CurrentLocation;
+import ru.developer.android.google_map.GoogleMapActivity;
+import ru.developer.android.google_map.MainGoogleMap;
 
-public class MainTelephoneManager extends AppCompatActivity {
+public class MainWifi extends AppCompatActivity {
 
-    ListView listViewTelManager;
+    ListView listViewWifi;
     ArrayAdapter<String> adapter;
-    ArrayList<String> telManagerList;
+    ArrayList<String> wifiList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_telephon_manager);
+        setContentView(R.layout.activity_main_wifi);
 
         ActionBar actionBar = this.getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        actionBar.setTitle("Telephone Manager");
+        actionBar.setTitle("Wifi");
 
-
-        listViewTelManager = findViewById(R.id.listViewTelManager);
+        listViewWifi = findViewById(R.id.listViewWifi);
 
         setInitialData();
 
-        adapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, telManagerList);
-        listViewTelManager.setAdapter(adapter);
+        adapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, wifiList);
+        listViewWifi.setAdapter(adapter);
 
-        listViewTelManager.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listViewWifi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        Intent intent = new Intent(MainTelephoneManager.this, PhoneDetailsActivity.class);
+                        Intent intent = new Intent(MainWifi.this, ChangeWifi.class);
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent1 = new Intent(MainTelephoneManager.this, PhoneCallActivity.class);
+                        Intent intent1 = new Intent(MainWifi.this, infoWifi.class);
                         startActivity(intent1);
                         break;
                     case 2:
-                        Intent intent2 = new Intent(MainTelephoneManager.this, SendEmailActivity.class);
+                        Intent intent2 = new Intent(MainWifi.this, ScanWifiActivity.class);
                         startActivity(intent2);
-                        break;
-                    case 3:
-                        Intent intent3 = new Intent(MainTelephoneManager.this, ReadContactActivity.class);
-                        startActivity(intent3);
                         break;
 
                 }
@@ -70,11 +66,10 @@ public class MainTelephoneManager extends AppCompatActivity {
 
     private void setInitialData() {
 
-        telManagerList = new ArrayList<>();
-        telManagerList.add("Phone details");
-        telManagerList.add("Phone Call");
-        telManagerList.add("Send EMAIL");
-        telManagerList.add("Read contacts");
+        wifiList = new ArrayList<>();
+        wifiList.add("Change WIFI State");
+        wifiList.add("WIFI Information");
+        wifiList.add("WIFI list");
 
     }
 
@@ -88,4 +83,3 @@ public class MainTelephoneManager extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-

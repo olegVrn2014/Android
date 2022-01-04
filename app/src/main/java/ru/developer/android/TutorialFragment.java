@@ -19,17 +19,20 @@ import ru.developer.android.camera_sensor.MainCameraSensor;
 import ru.developer.android.containers.MainContainers;
 import ru.developer.android.dateTime.MainDateTime;
 import ru.developer.android.fragment.MainFragments;
+import ru.developer.android.google_map.MainGoogleMap;
 import ru.developer.android.intents.IntentMain;
 import ru.developer.android.layouts.MainLayouts;
 import ru.developer.android.material_design.MaterialDesignMain;
 import ru.developer.android.menu.MainMenu;
 import ru.developer.android.multimedia.MainMultimedia;
+import ru.developer.android.notifications.MainNotifications;
 import ru.developer.android.resource.MainResource;
 import ru.developer.android.service.MainService;
 import ru.developer.android.styles_themes.MainStyles;
 import ru.developer.android.tel_manager.MainTelephoneManager;
 import ru.developer.android.toast.ToastMain;
 import ru.developer.android.widgets.WidgetsMain;
+import ru.developer.android.wifi.MainWifi;
 
 
 public class TutorialFragment extends Fragment {
@@ -345,6 +348,33 @@ public class TutorialFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), MainTelephoneManager.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView google_map = view.findViewById(R.id.google_map);
+        google_map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainGoogleMap.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView wifi = view.findViewById(R.id.wifi);
+        wifi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainWifi.class);
+                startActivity(intent);
+            }
+        });
+
+        ZoomInImageView notification = view.findViewById(R.id.notifications);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainNotifications.class);
                 startActivity(intent);
             }
         });
